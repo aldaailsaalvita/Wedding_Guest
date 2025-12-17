@@ -11,19 +11,19 @@ Aplikasi ini dibuat menggunakan **PHP**, **MySQL**, dan **phpMyAdmin**.
 
 🔐 Login Page
 
-![Halaman Login](screenshots/halaman login.png)
+![Halaman Login](screenshoot/halaman login.png)
 
 🛠️ Admin Page
 
-![Halaman Admin](screenshots/halaman admin.png)
+![Halaman Admin](screenshoot/halaman admin.png)
 
 ✅ Guest Attendance Confirmation Page
 
-![Halaman Konfirmasi Kehadiran Tamu](screenshots/halaman konfirmasi kehadiran tamu.png)
+![Halaman Konfirmasi Kehadiran Tamu](screenshoot/halaman konfirmasi kehadiran tamu.png)
 
 📱 Pager Page
 
-![Halaman Pager](screenshots/halaman pager ayu.png)
+![Halaman Pager](screenshoot/halaman pager ayu.png)
 
 ---
 
