@@ -1,6 +1,6 @@
 # 💒 Buku Tamu Digital (Wedding Guestbook)
 
-![Halaman Utama](screenshoot\halaman_dashboard.png)
+![Halaman Utama](screenshoot/halaman_dashboard.png)
 
 Proyek ini adalah aplikasi **Buku Tamu Digital** berbasis web untuk keperluan acara pernikahan.  
 Aplikasi ini dibuat menggunakan **PHP**, **MySQL**, dan **phpMyAdmin**.
