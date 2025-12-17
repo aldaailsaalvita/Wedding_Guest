@@ -9,11 +9,21 @@ Aplikasi ini dibuat menggunakan **PHP**, **MySQL**, dan **phpMyAdmin**.
 
 ## 📋 Fitur Utama
 
-- Form input tamu (nama, email, pesan ucapan)
-- Daftar tamu yang sudah hadir
-- Status kehadiran dengan kolom `checkin_status`
-- Login multi-role (Admin & Pagers)
-- Database mudah dikelola melalui phpMyAdmin
+🔐 Login Page
+
+![Halaman Login](screenshots/halaman login.png)
+
+🛠️ Admin Page
+
+![Halaman Admin](screenshots/halaman admin.png)
+
+✅ Guest Attendance Confirmation Page
+
+![Halaman Konfirmasi Kehadiran Tamu](screenshots/halaman konfirmasi kehadiran tamu.png)
+
+📱 Pager Page
+
+![Halaman Pager](screenshots/halaman pager ayu.png)
 
 ---
 
