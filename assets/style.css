@@ -1,0 +1,268 @@
+/* ====== GLOBAL ====== */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #444;
+  background: url("../images/background.png") center center / cover no-repeat
+    fixed;
+  background-attachment: fixed; /* agar tetap di tempat saat scroll */
+}
+
+/* ====== HERO SECTION ====== */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::after {
+  display: none;
+}
+
+/* Kotak utama di tengah */
+.overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  padding: 4rem 5rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  animation: fadeUp 1s ease-out;
+}
+
+/* Nama pengantin */
+.overlay h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 4.5rem;
+  color: #d6336c;
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Deskripsi di bawah nama */
+.overlay p {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+/* ====== ANIMASI ====== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== CONTENT SECTION ====== */
+.content {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  margin-bottom: 35px;
+  border-radius: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border: 2px solid #fde2e4;
+}
+
+section:hover {
+  transform: scale(1.01);
+  transition: 0.3s ease;
+}
+
+/* Judul section */
+h2 {
+  color: #e17b9c;
+  font-family: "Great Vibes", cursive;
+  font-size: 2.3rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+/* ====== FORM STYLING ====== */
+input,
+select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #f8a1c4;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #e17b9c;
+  box-shadow: 0 0 5px rgba(233, 118, 152, 0.3);
+}
+
+/* Tombol */
+button {
+  background: linear-gradient(90deg, #f8a1c4, #f9d1d1);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #f69bb7, #f7b8b8);
+  box-shadow: 0 5px 15px rgba(249, 164, 189, 0.4);
+}
+
+/* ====== FOOTER ====== */
+footer {
+  text-align: center;
+  background: rgba(255, 240, 245, 0.8);
+  padding: 25px;
+  border-top: 2px solid #f9c5d1;
+  color: #8c5a6e;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .overlay {
+    padding: 2.5rem 1.8rem;
+    max-width: 90%;
+  }
+
+  .overlay h1 {
+    font-size: 3rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 25px;
+  }
+}
+
+/* 🌷 BUNGA-BUNGA BERTERBANGAN */
+.flower-floating {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none; /* biar gak ganggu klik */
+  z-index: 1;
+}
+
+.petal {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(
+    circle at center,
+    #ffd6e0 0%,
+    #ffc2d1 40%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: floatPetals linear infinite;
+}
+
+/* posisi acak di layar */
+.petal:nth-child(1) {
+  left: 5%;
+  animation-duration: 12s;
+  animation-delay: 0s;
+}
+.petal:nth-child(2) {
+  left: 15%;
+  animation-duration: 15s;
+  animation-delay: 3s;
+}
+.petal:nth-child(3) {
+  left: 25%;
+  animation-duration: 10s;
+  animation-delay: 1s;
+}
+.petal:nth-child(4) {
+  left: 40%;
+  animation-duration: 13s;
+  animation-delay: 2s;
+}
+.petal:nth-child(5) {
+  left: 55%;
+  animation-duration: 11s;
+  animation-delay: 4s;
+}
+.petal:nth-child(6) {
+  left: 70%;
+  animation-duration: 14s;
+  animation-delay: 5s;
+}
+.petal:nth-child(7) {
+  left: 80%;
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+.petal:nth-child(8) {
+  left: 90%;
+  animation-duration: 16s;
+  animation-delay: 0s;
+}
+.petal:nth-child(9) {
+  left: 95%;
+  animation-duration: 13s;
+  animation-delay: 6s;
+}
+
+@keyframes floatPetals {
+  0% {
+    transform: translateY(-10px) rotate(0deg) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(50vh) rotate(180deg) scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg) scale(1);
+    opacity: 0;
+  }
+}
